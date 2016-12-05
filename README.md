@@ -26,6 +26,29 @@ Insert a valid CPF number
 ```
 Consulta.cpf(99999999999)
 Consulta.cpf('999.999.999-99')
+Consulta.cpf('99999999999')
+```
+
+### Wtf example
+````
+consultar = Consulta.cpf('999.999.999-99')
+````
+return
+
+```
+{:cpf=>"99999999999", :nome=>"JOAO DA SILVA", :data_nascimento=>"11/02/1990", :sexo_short=>"M", :sexo_long=>"MASCULINO", :nome_mae=>"MARIA DA SILVA"} 
+```
+Access info
+
+```
+consultar[:nome]
+=> 'JOAO DA SILVA'
+
+consultar[:nome_mae]
+=> 'MARIA DA SILVA'
+
+consultar[:data_nascimento]
+=> '11/02/1990'
 ```
 
 ## Development
