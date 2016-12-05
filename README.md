@@ -21,8 +21,12 @@ Or install it yourself as:
     $ gem install consulta_cpf
 
 ## Usage
+Insert a valid CPF number
 
-TODO: Write usage instructions here
+```
+Consulta.cpf(99999999999)
+Consulta.cpf('999.999.999-99')
+```
 
 ## Development
 
