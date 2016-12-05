@@ -1,6 +1,5 @@
 require "consulta_cpf/version"
-
-%w(consulta_cpf version).each {|req| require File.dirname(__FILE__) + "/cpf_consulta/#{req}"}
+require "consulta_cpf/consulta_cpf"
 
 module ConsultaCpf
 end
